@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(BINARY_DIR ${CMAKE_BINARY_DIR}/bin)
 set(CmakeHelpers ${CMAKE_CURRENT_SOURCE_DIR}/cmake_helpers)
 
+include(${CmakeHelpers}/add_static_library.cmake)
 include(${CmakeHelpers}/add_subdirectory_recursively.cmake)
 
 message(STATUS "CMAKE_CXX_STANDARD " ${CMAKE_CXX_STANDARD})
