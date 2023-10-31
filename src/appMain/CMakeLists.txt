@@ -1,0 +1,9 @@
+project(FSM)
+
+add_executable(${PROJECT_NAME})
+add_executable(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
+target_sources(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/main.cpp)
+
+install(TARGETS ${PROJECT_NAME}
+DESTINATION ${BINARY_DIR})
