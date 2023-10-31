@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(MainCMakeList)
+project(FiniteStateMachine)
 message(STATUS "Finite State Machine")
 
 set(CMAKE_CXX_STANDARD 20)
